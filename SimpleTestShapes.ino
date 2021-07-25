@@ -1,24 +1,3 @@
-/*
- * another details to narrow down the issue:
-
-for the 3(cols)x2(row) setup, 1 row is 3 panels:
-
-ghosting happens one pixel off on the top of character on the 1st row of 2 rows.
-ghosting happens one pixel off top and one pixel off bottom of character if the character are position in the middle of the screen which rendered in the 1st row and 2nd row.
-ghosting happens one pixel bottom of the character if position on the 2nd row of the panel.
-settings:
-mxconfig.double_buff = true;
-mxconfig.latch_blanking = 1;
-mxconfig.i2sspeed = HUB75_I2S_CFG::HZ_20M;
-mxconfig.clkphase = false;
-mxconfig.min_refresh_rate = 5;
-
-change above configuration to other value: HZ_10M, clkphase false/true, higher refresh rate did not gets rid of the issue
-
-thanks!
- */
-
-
 
 // Example sketch which shows how to display some patterns
 // on a 64x32 LED matrix
